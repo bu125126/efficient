@@ -4,7 +4,11 @@
 	"private": true,
 	"scripts": {
 		"serve": "vue-cli-service serve",
+		"serve:test": "vue-cli-service serve --mode testing",
+		"serve:stage": "vue-cli-service serve --mode staging",
 		"build": "vue-cli-service build",
+		"build:test": "vue-cli-service build --mode testing",
+		"build:stage": "vue-cli-service build --mode staging",
 		"lint": "vue-cli-service lint",
 		"prettier": "prettier --write .",
 		"prepare": "husky install",
@@ -19,6 +23,8 @@
 	"devDependencies": {
 		"@babel/core": "^7.12.16",
 		"@babel/eslint-parser": "^7.12.16",
+		"@commitlint/cli": "^17.0.3",
+		"@commitlint/config-conventional": "^17.0.3",
 		"@vue/cli-plugin-babel": "~5.0.0",
 		"@vue/cli-plugin-eslint": "~5.0.0",
 		"@vue/cli-plugin-router": "~5.0.0",
